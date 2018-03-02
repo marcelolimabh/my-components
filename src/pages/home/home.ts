@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
+import { LifecycleEventsPage } from './../lifecycle-events/lifecycle-events';
+
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -41,6 +44,19 @@ export class HomePage {
 
   onDidWin(){
     return this.tapped ==2 && this.pressed==4;
+  }
+
+  lifecycle(){
+    this.navCtrl.push(LifecycleEventsPage).then((valor)=>{
+
+      if(!valor){
+        console.log('Acesso negado1', valor);
+      }else{
+        console.log('Page pushed');
+      }
+    }).catch(error =>{
+      console.log('Acesso negado2', error);
+    });
   }
 
 }

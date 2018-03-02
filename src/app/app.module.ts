@@ -1,3 +1,4 @@
+import { LifecycleEventsPage } from './../pages/lifecycle-events/lifecycle-events';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -12,6 +13,7 @@ import { ResetComponent } from './components/reset.component';
   declarations: [
     MyApp,
     HomePage,
+    LifecycleEventsPage,
     ResetComponent
   ],
   imports: [
@@ -21,7 +23,8 @@ import { ResetComponent } from './components/reset.component';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    LifecycleEventsPage
   ],
   providers: [
     StatusBar,
