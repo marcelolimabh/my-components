@@ -24,7 +24,8 @@ import { ResetComponent } from './components/reset.component';
   entryComponents: [
     MyApp,
     HomePage,
-    LifecycleEventsPage
+    LifecycleEventsPage,
+    ResetComponent
   ],
   providers: [
     StatusBar,
